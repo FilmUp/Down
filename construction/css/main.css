@@ -1,0 +1,139 @@
+/* Import Fonts */
+@import url(http://fonts.googleapis.com/css?family=Coustard|Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight:400;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: #777;
+    background: #000;
+}
+h1, h2, h3, h4, h5, h6, p, label{
+    font-family: 'Coustard', serif;
+    color:#fff;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+h1{font-size: 63px; line-height: 70px; padding: 0; margin: 0;}
+h5{font-size: 28px; line-height: 35px; padding: 0; margin: 0; color: #b7b7b7;}
+
+a {
+    color: #b7b7b7;
+    text-decoration:none;
+    font-weight: normal;
+}
+a:hover {text-decoration:underline;}
+
+
+.gradient {
+    left:0;
+    height:100%;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+
+.show{display: block;}
+.hide{opacity: 0;}
+
+/* Set Page Elements */
+.content {
+    float:left;
+    margin:40px;
+    position:absolute;
+    top:50px;
+    width:600px;
+    z-index:9999;
+    -webkit-font-smoothing:antialiased;
+}
+
+#logo {
+    font-family: 'Coustard', serif;
+    font-size: 49px;
+    bottom:40px;
+    height:auto;
+    left:40px;
+    position:absolute;
+    width:20%;
+    z-index:1000;
+    color: #fff;
+}
+#logo .preview-img {
+    max-width: 200px;
+    margin-top: 2em;
+    padding-bottom: -2em;
+    margin-bottom: -1em;
+}
+
+
+.main{
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.cover{
+    position: fixed;
+    opacity: 1;
+    background-color: rgba(0,0,0,.6);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cover.black{
+    background-color: rgba(0,0,0,.6);
+}
+.cover.blue{
+    background-color: rgba(5, 31, 60, 0.6);
+}
+.cover.green{
+    background-color: rgba(3, 28, 7, 0.6);
+}
+
+.css-input {
+     font-size:16px; border-width:2px; border-color:#cccccc; background-color:white; border-style:solid; text-shadow:0px 0px 0px rgba(42,42,42,.75); border-radius:20px; padding:3px; padding-right: 15px; }
+.css-input:focus { outline:none; }
+
+/*Submit Form*/
+.subscribe{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    width: 252px;
+    margin: -5px auto 40px auto;
+    padding: 4px;
+    border-radius:10px;
+    background: whitesmoke;
+    border-style:solid;
+}
+.subscribe input{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 35px;
+}
+.subscribe input[type="text"],
+.subscribe input[type="email"]{
+    color: #c4c4c4;
+    margin: 0 4px 0 0;
+    width: 350px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}

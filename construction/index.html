@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FilmUp - Make Your Film Matter</title>
+    <meta name="author" content="Laurence Welch">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main" style="background-image: url('https://s3.amazonaws.com/filmup-assets/bg.jpg')">
+    <div class="cover blue" data-color="black"></div>
+    <div class="container">
+    </div>
+</div>
+<!-- Site Logo -->
+<div id="logo">
+    <img src="https://s3.amazonaws.com/filmup-assets/logo.png" alt="preview" class="preview-img" ><br>
+</div>
+
+<!-- Home Page -->
+<section class="content show" id="home">
+    <h1>Welcome</h1>
+    <h5>Our new site is coming soon!</h5>
+    <p>FilmUp, LLC is a film market catalyst that promotes nonprofit, professional and student partnerships through films and an exclusive online network. FilmUp offers a vast database of employment, internship, and freelance opportunities. We help make the connections you need to take your career or company to the next level. Our team will match talented filmmakers with projects and companies that are aligned with their skill level and passions.</p>
+    <!-- <p>The FilmUp network not only aims to create meaningful connections but it also aims to produce socially impactful films that support and promote non-profit growth. Our mission is to make the world a better place, one partnership at a time.</p> -->
+    <p>Drop your email below to be amoung the first to find out when we launch.</p>
+    <form id="mc-form">
+        <input id="mc-email" type="email" class="subscribe"  placeholder="email">
+        <label for="mc-email"></label>
+        <button type="submit">Submit</button>
+    </form>
+    <h5 class="hide" id="msg">Sent!</h5>
+</section>
+
+<section class="content-right show" id="email">
+    <p>Drop your email below to be amoung the first to find out when we launch.</p>
+</section>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+<script src='js/mailchimp.js'></script>
+<script type="text/javascript" charset="utf-8">
+    $(function(){
+        $('#mc-form').ajaxChimp({
+            url: 'http://film-up.us11.list-manage.com/subscribe/post?u=92cb5206298d85b978d9c9fb7&amp;id=8d76e1a0ca'
+        });
+        $('#mc-form').ajaxChimp({
+            callback: callbackFunction
+        });
+        function callbackFunction (resp) {
+            $( '#mc-form').removeClass('show').addClass('hide');
+            $( '#msg').removeClass('hide').addClass('show');
+        }
+    });
+
+</script>
+</body>
+</html>
