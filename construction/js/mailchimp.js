@@ -49,9 +49,7 @@
         $(this).each(function(i, elem) {
             var form = $(elem);
             var email = form.find('input[type=email]');
-            var label = form.find('label[for=' + email.attr('id') + ']');
-            var butt = form.find('button[type=submit]');
-
+            var ajaxResponse = $('#subscription-response');
             var settings = $.extend({
                 'url': form.attr('action'),
                 'language': 'en'
@@ -59,7 +57,7 @@
 
             var url = settings.url.replace('/post?', '/post-json?').concat('&c=?');
 
-            form.attr('novalidate', 'true');
+            form.attr('validate', 'true');
             email.attr('name', 'EMAIL');
 
             form.submit(function () {
@@ -67,12 +65,8 @@
                 function successCallback(resp) {
                     if (resp.result === 'success') {
                         msg = 'We have sent you a confirmation email!';
-                        label.removeClass('error').addClass('valid');
-                        butt.removeClass('show').addClass('hide');
-                        email.removeClass('show').addClass('hide');
+                        form.fadeOut(2000);
                     } else {
-                        butt.removeClass('show').addClass('hide');
-                        email.removeClass('show').addClass('hide');
                         var index = -1;
                         try {
                             var parts = resp.msg.split(' - ', 2);
@@ -105,9 +99,8 @@
                     ) {
                         msg = $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]];
                     }
-                    label.html(msg);
+                    ajaxResponse.html(msg).show(2000);
 
-                    label.show(2000);
                     if (settings.callback) {
                         settings.callback(resp);
                     }
@@ -139,7 +132,7 @@
                 ) {
                     submitMsg = $.ajaxChimp.translations[settings.language]['submit'];
                 }
-                label.html(submitMsg).show(2000);
+                ajaxResponse.html(submitMsg).show(2000);
 
                 return false;
             });

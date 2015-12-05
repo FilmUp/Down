@@ -2,64 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FilmUp - Make Your Film Matter</title>
-    <meta name="author" content="Laurence Welch">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>FilmUp - Make Your Film Matter</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/et-line-font.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="css/construction.css" rel="stylesheet">
 </head>
 <body>
-<div class="main" style="background-image: url('https://s3.amazonaws.com/filmup-assets/bg.jpg')">
-    <div class="cover blue" data-color="black"></div>
-    <div class="container">
+<!-- Home start -->
+<section id="home" class="home-section home-parallax home-fade bg-dark-60 home-full-height" data-background="https://s3.amazonaws.com/filmup-assets/bg.jpg">
+    <div class="hs-caption">
+        <div class="caption-content">
+            <img src="https://s3.amazonaws.com/filmup-assets/logo.png" alt="preview" class="preview-img" >
+            <h4 class="caption-text">We'll be back really soon. We're off making awesome stuff!</h4>
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5">
+                    <div class="large-text align-center" >
+                        <a href="#about" class="section-scroll" style="color: white"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
-<!-- Site Logo -->
-<div id="logo">
-    <img src="https://s3.amazonaws.com/filmup-assets/logo.png" alt="preview" class="preview-img" ><br>
-</div>
+</section> <!-- Home end -->
 
-<!-- Home Page -->
-<section class="content show" id="home">
-    <h1>Welcome</h1>
-    <h5>Our new site is coming soon!</h5>
-    <p>FilmUp, LLC is a film market catalyst that promotes nonprofit, professional and student partnerships through films and an exclusive online network. FilmUp offers a vast database of employment, internship, and freelance opportunities. We help make the connections you need to take your career or company to the next level. Our team will match talented filmmakers with projects and companies that are aligned with their skill level and passions.</p>
-    <!-- <p>The FilmUp network not only aims to create meaningful connections but it also aims to produce socially impactful films that support and promote non-profit growth. Our mission is to make the world a better place, one partnership at a time.</p> -->
-    <p>Drop your email below to be amoung the first to find out when we launch.</p>
-    <form id="mc-form">
-        <input id="mc-email" type="email" class="subscribe"  placeholder="email">
-        <label for="mc-email"></label>
-        <button type="submit">Submit</button>
-    </form>
-    <h5 class="hide" id="msg">Sent!</h5>
-</section>
+<div class="main">
+    <section id="about" class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="module-title font-alt">Welcome to FilmUp</h2>
+                    <div class="module-subtitle font-sans large-text" >
+                        <div style="align-content: center; text-align: left; text-indent: 5%;">
+                            FilmUp, LLC is a film market catalyst that promotes nonprofit, professional and student partnerships through films and an exclusive online network. FilmUp offers a vast database of employment, internship, and freelance opportunities. We help make the connections you need to take your career or company to the next level. Our team will match talented filmmakers with projects and companies that are aligned with their skill level and passions.<br>
+                        </div>
+                        <div style="align-content: center; text-align: left; text-indent: 5%;">
+                            The FilmUp network not only aims to create meaningful connections but it also aims to produce socially impactful films that support and promote non-profit growth. <b>Our mission is to make the world a better place, one partnership at a time.</b>
+                        </div>
+                    </div> <!-- description text end -->
+                </div> <!-- col end -->
+            </div><!-- .row -->
 
-<section class="content-right show" id="email">
-    <p>Drop your email below to be amoung the first to find out when we launch.</p>
-</section>
+        </div> <!-- container end-->
+    </section> <!-- About end -->
+    <!-- Subscribe start -->
+    <section class="module-small bg-dark">
+        <div class="container">
 
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js'></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+
+                    <div class="callout-text font-alt">
+                        <h3 class="callout-title">Subscribe now</h3>
+                        Be the first to know when we launch.
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="callout-btn-box">
+                        <form id="subscription-form" role="form">
+                            <div class="input-group">
+                                <input type="email" id="semail" name="semail" class="form-control" placeholder="Your Email" required data-validation-required-message="Please enter your email address.">
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-g btn-round">Submit</button>
+									</span>
+                            </div>
+                        </form>
+                        <!-- Ajax response -->
+                        <div id="subscription-response" class="ajax-response"></div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div>
+    </section>
+    <!-- Subscribe end -->
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="copyright font-alt">© 2015 <a href="#home">FilmUp</a>, All Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                    </div> <!-- social links end -->
+                </div> <!-- col end -->
+            </div><!-- .row -->
+        </div> <!-- container end -->
+    </footer> <!-- footer end -->
+</div> <!-- main content end -->
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="js/jquery.simple-text-rotator.min.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/home.js"></script>
 <script src='js/mailchimp.js'></script>
+
 <script type="text/javascript" charset="utf-8">
     $(function(){
-        $('#mc-form').ajaxChimp({
+        $('#subscription-form').ajaxChimp({
             url: 'http://film-up.us11.list-manage.com/subscribe/post?u=92cb5206298d85b978d9c9fb7&amp;id=8d76e1a0ca'
         });
-        $('#mc-form').ajaxChimp({
-            callback: callbackFunction
-        });
-        function callbackFunction (resp) {
-            $( '#mc-form').removeClass('show').addClass('hide');
-            $( '#msg').removeClass('hide').addClass('show');
-        }
     });
-
 </script>
+
 </body>
 </html>
+
