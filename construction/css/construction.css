@@ -1624,7 +1624,9 @@ Responsive Media Querries
     .can-hide {
         display: none;
     }
-
+    .caption-text {
+        margin-top: -20px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -1634,7 +1636,9 @@ Responsive Media Querries
     .can-hide {
         display: none;
     }
-
+    .caption-text {
+        margin-top: -20px;
+    }
 }
 
 @media (max-width: 767px) {
