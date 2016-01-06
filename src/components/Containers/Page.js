@@ -14,5 +14,5 @@ class Page extends Component {
   }
 }
 
-Body.propTypes = propTypes;
+Page.propTypes = propTypes;
 export default Page;

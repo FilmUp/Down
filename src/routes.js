@@ -10,10 +10,12 @@
 import React from 'react';
 import Router from 'react-routing/src/Router';
 import RouterContainer from './services/RouterContainer';
+import assets from './assets';
 
 import HomePage from './components/Pages/HomePage.js';
 import SignUp from './components/Pages/SignUp.js';
-import LoginPage from './components/LoginPage.js';
+import LoginPage from './components/Pages/LoginPage.js';
+
 import BusinessSignUpPage from './components/BusinessSignUpPage.js';
 import StudentSignUpPage from './components/StudentSignUpPage.js';
 import SubscriptionPage from './components/SubscriptionPage.js';
@@ -22,9 +24,9 @@ import SubmitProjectPage from './components/SubmitProjectPage.js';
 import BusinessProfile from './components/BusinessProfile.js';
 
 const router = new Router(on => {
-  on('/', async () => <HomePage />);
-  on('/home', async () => <HomePage />);
-  on('/login', async () => <LoginPage />);
+  on('/', async () => <HomePage entry={assets.main.js} />);
+  on('/home', async () => <HomePage entry={assets.main.js} />);
+  on('/login', async () => <LoginPage entry={assets.main.js}/>);
   on('/student-signup', () => <StudentSignUpPage />);
   on('/business-signup', () => <BusinessSignUpPage />);
   on('/project', () => <SubmitProjectPage />);

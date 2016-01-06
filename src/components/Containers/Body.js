@@ -6,7 +6,7 @@ const propTypes = {
 
 class Body extends Component {
   render() {
-    return <body>
+    return <body style={this.props.style}>
     {this.props.children}
     {this.props.imports}
     </body>
